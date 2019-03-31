@@ -1,0 +1,10 @@
+[Unit]
+Description=sudo access grant service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sudo-access  --device_hostname 'SYSTEMD'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
